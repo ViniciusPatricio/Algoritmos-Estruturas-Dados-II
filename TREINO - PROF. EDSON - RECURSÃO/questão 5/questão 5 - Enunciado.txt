@@ -1,0 +1,39 @@
+Euclides Recursivo
+
+O máximo divisor comum (mdc) de dois números a e b tais que a,b>0 é o maior
+ inteiro positivo c que divide ao mesmo tempo a e b.
+
+Uma forma de encontrar o mdc de dois números é fatorar ambos separadamente.
+ Porém esse método é bastante ineficiente, pois exige um grande
+ número de divisões para encontrar os fatores de números muito grandes, 
+ especialmente se forem primos.
+
+Um algoritmo mais eficiente para encontrar o mdc é o Algoritmo de Euclides.
+ Trata-se de um dos algoritmos mais antigos e normalmente é 
+descrito da seguinte maneira:
+
+Para encontrar o mdc de dois inteiros a e b, primeiro verifique se a=b. 
+Se forem iguais, então a é o mdc. Caso contrário, substitua o 
+maior deles pela sua diferença e repita.
+
+Escreva uma função recursiva que recebe dois inteiros a e b e retorna um
+ inteiro c contendo o mdc de a e b.
+
+Faça um programa principal que lê uma porção de pares de números inteiros 
+positivos e imprime o mdc entre eles.
+
+Entrada
+
+Cada linha da entrada conterá um par de inteiros a e b tais que a>0 e b>0.
+
+Haverá vários casos de teste. A entrada termina com o sinal de fim-de-arquivo.
+
+Saída
+
+Para cada linha, imprima o mdc entre os dois números lidos.
+
+Entrada	
+24
+32
+Saída	
+8

@@ -1,0 +1,33 @@
+m palíndromo é uma string que é lida da mesma maneira da esquerda para a direita 
+e da direita para a esquerda. Alguns exemplos de palíndromo 
+são "radar" e "a 
+bola da loba" (se os espaços forem ignorados) Escreva uma função recursiva que
+ retorna 1 se a string armazenada no array 
+for um palíndromo e 0, caso contrário. O método deve ignorar espaços e pontuação 
+a string.
+
+A main deve ler várias strings (vetores de char), uma por linha, e verificar 
+se a mesma é palíndromo ou não. 
+A leitura deve parar quando a leitura for apenas um X.
+
+Dicas
+Não esqueça de definir um caso base antes de tudo.
+
+ 
+
+A função pode receber a posição do início e o final da string como parâmetro
+
+ 
+
+Use vetor de char ao invés de string.
+
+
+Entrada	
+ARARA
+A LOBA DA BOLA
+NAO E PALINDROMO
+X
+Saída	
+1
+1
+0

@@ -1,0 +1,44 @@
+Implemente um programa em C que construa uma tabela comparativa dos métodos de ordenação de dados, relacionados a seguir:
+
+- Bolha
+
+- QuickSort
+
+- HeapSort
+
+- MergeSort
+
+Para cada método, o programa deve calcular:
+
+a) Número médio de comparações no caso do vetor desordenado
+
+b) Número médio de trocas no caso do vetor desordenado
+
+c) Média do tempo gasto para a classificação no caso do vetor desordenado
+
+d) Número de comparações no caso do vetor já ordenado
+
+e) Número de trocas no caso do vetor já ordenado
+
+f) Tempo gasto para o caso do vetor já ordenado
+
+g) Número de comparações no caso do vetor ordenado inversamente
+
+h) Número de trocas no caso do vetor ordenado inversamente
+
+i) Tempo gasto para o caso do vetor ordenado inversamente
+
+Observações:
+
+- Utilize um vetor de 1000 elementos inteiros, gerado com valores aleatórios no intervalo de 0 a 99999.
+
+- Para os itens (a), (b) e (c), obtenha a média da classificação de 40 vetores distintos.
+
+- Deve-se buscar implementações que usem a recursividade.
+
+- O código fonte deve ser entregue e documentado. *NÃO ESQUECER DE COLOCAR SEU NOME *.
+
+- Atenção para o caso de plágio.
+
+- Grave um vídeo, e encaminhe o link apresentando como foi construído o seu código; 
+- Grave um vídeo do seu código sendo executado.

@@ -1,0 +1,21 @@
+Multiplicação dos elementos de um vetor
+
+Faça um programa que leia um vetor de N elementos inteiros e calcule recursivamente o PRODUTO dos elementos desse vetor.
+
+
+exemplo:
+ENTRADA
+10
+5
+3
+4
+2
+4
+5
+4
+3
+2
+4
+
+SAÍDA
+230400

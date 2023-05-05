@@ -1,0 +1,9 @@
+Dado um array de inteiros e seus elementos, inverta a posição dos seus elementos e em seguida dê o somatório dele.
+
+
+Entrada	
+5
+1 2 3 4 5
+Saída	
+5 4 3 2 1
+15

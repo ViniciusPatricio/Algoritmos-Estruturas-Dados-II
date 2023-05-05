@@ -1,0 +1,35 @@
+aiz Quadrada Recursiva
+
+O cálculo da raiz quadrada de um número real x pode ser feito através do 
+seguinte algoritmo:
+
+RaizQ(x,x0,ξ) = I. x0;    |x0^2-x|<= ξ
+		II. Raiz(x,(x0^2+x)/2; ξ
+
+ 
+
+Em que x0 é uma aproximação inicial do valor da raiz quadrada de x e ξ é um erro 
+admissível.
+
+Receba como entrada um número ilimitado de valores de x, x0, ξ, onde x é um 
+número inteiro e positivo e x0, ξ são valores ponto flutuantes de precisão 
+simples (não é precisão dupla) e positivos. Calcule e imprima 
+(sempre com seis casas decimais) o valor da raiz quadrada aproximada 
+(também de precisão simples) de acordo com o algoritmo recursivo acima.
+ Considere que ξ é um valor real positivo e maior ou igual a 0.00001. 
+ Os últimos valores de entrada, que não deverá gerar saída, deve conter 
+ os valores iguais a 0, 0 e 0.
+
+PS. Não use "pow" para calcular a potência de 2, mas multiplique a variável 
+por ela mesma.
+
+ENTRADA
+25 4 0.01
+120 8 0.001
+56 10 0.00001
+0 0 0
+
+SAÍDA (imprima com "%.6f")
+5.000000
+10.954458
+7.483315

@@ -1,0 +1,32 @@
+Implemente um programa em C que construa uma árvore 2-3-4 a partir de uma entrada de 
+
+300 números aleatórios.
+
+A partir daí deve-se imprimir cada um desses números, associando-os ao nível da árvore que ele se encontra e qual sua posição dentro do nó.
+
+Por exemplo: Suponha que a árvore tenha só o nó raiz com três chaves.
+
+| 10 | 55 | 95 |
+
+Nesse, caso, a impressão vai ser
+0 0 10
+0 1 55
+0 2 95
+onde o primeiro número representa o nível o segundo número representa a posição da chave (0, 1 ou 2), e o terceiro número é a chave.
+
+Em seguida, gere mais 80 números aleatórios e com esses números verifique se:
+
+- eles estão na árvore. Se estiverem, devem ser retirados, e guardada a informação (chave X estava no nível Y da árvore e na posição K no nó)
+- eles não estão na árvore. Neste caso guarde a informação: o valor J não encontra-se na árvore.
+
+
+
+- Deve-se buscar implementações que usem a recursividade.
+
+- O código fonte deve ser entregue e documentado. *NÃO ESQUECER DE COLOCAR SEU NOME *.
+
+- Atenção para o caso de plágio.
+
+- Grave um vídeo, e encaminhe o link apresentando como foi construído o seu código; 
+- Grave um vídeo do seu código sendo executado.
+

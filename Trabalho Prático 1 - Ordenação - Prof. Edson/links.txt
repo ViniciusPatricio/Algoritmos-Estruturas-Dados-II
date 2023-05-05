@@ -1,0 +1,4 @@
+Vídeos: https://drive.google.com/drive/folders/1XQaxbVsLQHSVwcF3-17yUaWaa1_ipl5m?usp=sharing
+
+
+Site que usei para executar o código: https://repl.it/repls/LimpingDeficientMinimalsystem#main.c

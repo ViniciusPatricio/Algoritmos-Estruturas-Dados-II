@@ -1,0 +1,81 @@
+nálise de Texto
+
+Neste trabalho, você deverá escrever um programa que analisa um conjunto de frases extraídas do site Rotten Tomatoes.
+
+O Rotten Tomatoes é um site no qual os usuários podem fazer avaliações de filmes. Essas avaliações podem ser positivas, negativas ou neutras e também podem conter uma gama de sentimentos que o avaliador tinha no momento em que escreveu sua análise.
+
+Na Computação, existe um ramo de pesquisa amplo denominado Processamento de Linguagem Natural (PLN). Uma das tarefas em PLN é justamente a Análise de Sentimento. Geralmente o sentimento do autor é classificado simplesmente como positivo ou negativo.
+
+No arquivo frases.txt, você encontrará um conjunto de 11.855 frases que foram derivadas do estudo de Socher et al.. As frases do estudo foram processadas e agrupadas em mil categorias que dependem do sentimento, da natureza da frase e de um fator aleatório introduzido para simplificar o exercício.
+
+Sua missão envolve escrever um programa que cumpre os seguintes objetivos:
+
+Carregar o arquivo frases.txt e identificar a categoria de cada frase (veja descrição do arquivo abaixo);
+Transformar todas as palavras em letras minúsculas e remover as palavras que possuem menos que 4 caracteres;
+Inserir todas as frases em uma árvore balanceada no qual a chave é a categoria;
+Determinar qual é a categoria que contém o maior número de frases;
+Ler algumas consultas da entrada padrão e encontrar as 10 primeiras palavras, em ordem alfabética, para algumas categorias.
+O arquivo
+
+O arquivo frases.txt está disponível no Code Bench. Você pode verificar a presença dele com alguns testes. Por exemplo, digite o seguinte no terminal do Code Bench:
+
+wc frases.txt
+O comando wc significa word count e a saída dele será o número de linhas, palavras e caracteres do arquivo, respectivamente.
+
+O arquivo contém 11.855 linhas e cada linha é uma frase. Todas as frases possuem o seguinte formato:
+
+CATEGORIA    PALAVRA1 PALAVRA2 PALAVRA3           PALAVRAn .
+No qual CATEGORIA é um valor inteiro no intervalo aberto [0,1000[[0,1000[ e cada palavra é uma sequência de caracteres ASCII separados por espaços. Um único ponto final completa a frase. O ponto final somente aparecerá no fim de cada frase e nenhuma palavra terá mais que 40 caracteres.
+
+Exemplo:
+
+5    If you sometimes like to go to the movies to have fun , Wasabi is a good place to start .
+Essa frase pertence à categoria 5 e possui 20 palavras (pontuações podem ser consideradas palavras para os fins deste trabalho, exceto o ponto final, que é apenas um delimitador).
+
+Pré-processamento
+
+Trabalhos de PLN normalmente processam os dados textuais de diversas maneiras. Os objetivos do pré-processamento são facilitar a análise e melhorar os resultados. Um pré-processamento quase mandatório é a remoção de stopwords, que são palavras tão comuns que não trazem muita informação útil, tais como preposições, artigos etc. Isso é feito com uma lista de stopwords.
+
+Para simplificar, neste trabalho você deverá fazer apenas o seguinte processamento, em qualquer ordem:
+
+Ler cada frase, separando a categoria do texto;
+Ler cada palavra da frase;
+Descartar as palavras com menos de 4 caracteres;
+Transformar todas as letras maiúsculas em minúsculas das palavras não descartadas.
+O objetivo de descartar as palavras com menos de 4 caracteres é jogar fora as stopwords. Trata-se de uma heurística bem simples para substituir a lista de stopwords.
+
+A árvore
+
+Cada frase deverá ser inserida em uma árvore balanceada, no qual cada nó contém:
+
+A categoria das frases como chave;
+Uma coleção de todas as frases e/ou palavras que pertencem àquela categoria.
+Qualquer árvore balanceada pode ser usada para este trabalho (AVL, vermelho-preta, 2-3-4, árvore B etc.).
+
+Não insira a mesma categoria duas vezes na árvore. Uma vez que um nó foi criado para determinada categoria, as próximas frases deverão ser anexadas a esse nó.
+
+Você pode usar qualquer estrutura de dados para guardar as frases em cada nó.
+
+O uso de uma árvore balanceada é obrigatório, ainda que você pudesse escolher outras estruturas de dados para completar a tarefa.
+
+Análise e Consultas
+
+Antes de ler qualquer coisa do teclado, seu programa deverá imprimir:
+
+O texto "Palavras totais: ", seguido do número total de palavras que sobraram depois do pré-processamento;
+O texto "Maior categoria: ", seguido do código da categoria que contém o maior número de frases.
+Em seguida, seu programa deverá ler até 10 números inteiros do teclado. Esses números indicam categorias que desejamos consultar. Para cada categoria, imprima a lista das 10 primeiras palavras em ordem alfabética (com caracteres minúsculos), no seguinte formato:
+
+LINHA EM BRANCO
+Categoria NNN:
+PALAVRA1
+PALAVRA2
+PALAVRA3
+PALAVRA4
+PALAVRA5
+PALAVRA6
+PALAVRA7
+PALAVRA8
+PALAVRA9
+PALAVRA10
+Você não deve imprimir palavras duplicadas. Se após remover as palavras duplicadas e as palavras com menos de 4 letras, o tamanho da lista for menor que 10, simplesmente interrompa a impressão na última palavra encontrada.
